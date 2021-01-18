@@ -1,0 +1,15 @@
+/Users/praneetambastha/Desktop/Promotion/bin/Debug/net5.0/Promotion.deps.json
+/Users/praneetambastha/Desktop/Promotion/bin/Debug/net5.0/Promotion.runtimeconfig.json
+/Users/praneetambastha/Desktop/Promotion/bin/Debug/net5.0/Promotion.runtimeconfig.dev.json
+/Users/praneetambastha/Desktop/Promotion/bin/Debug/net5.0/Promotion.dll
+/Users/praneetambastha/Desktop/Promotion/bin/Debug/net5.0/ref/Promotion.dll
+/Users/praneetambastha/Desktop/Promotion/bin/Debug/net5.0/Promotion.pdb
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/Promotion.csprojAssemblyReference.cache
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/Promotion.GeneratedMSBuildEditorConfig.editorconfig
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/Promotion.AssemblyInfoInputs.cache
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/Promotion.AssemblyInfo.cs
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/Promotion.csproj.CoreCompileInputs.cache
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/Promotion.dll
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/ref/Promotion.dll
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/Promotion.pdb
+/Users/praneetambastha/Desktop/Promotion/obj/Debug/net5.0/Promotion.genruntimeconfig.cache
