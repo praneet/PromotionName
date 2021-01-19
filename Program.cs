@@ -1,5 +1,6 @@
 using System;
 using System.Data;
+using System.Linq;
 using System.Net.Http.Headers;
 
 namespace Promotion
@@ -19,9 +20,22 @@ namespace Promotion
 			Console.WriteLine("Total Cost of your cart " + TotalCost);
 		}
 
-		public static int TotalCheckout(DataTable inv,DataTable cart)
+		public static int TotalCheckout(DataTable inv, DataTable cart)
 		{
 			int total = 0;
+			var itemcost = (from p in inv.AsEnumerable()
+							join t in cart.AsEnumerable()
+							on p.Field<string>("PName") equals t.Field<string>("CPName")
+							select new
+							{
+								ProductName = t.Field<string>("CPName"),
+								TotalQTY = t.Field<string>("CPQty"),
+								ProductCost = p.Field<string>("PCost"),
+							}).ToList();
+			foreach (var item in itemcost)
+			{
+				total = total + (Convert.ToInt32(item.TotalQTY) * Convert.ToInt32(item.ProductCost));
+			}
 			return total;
 		}
 		public static DataTable AddTocart()
