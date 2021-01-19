@@ -55,6 +55,10 @@ namespace Promotion
 							deleteProduct.Add(item.ComboProduct);
 							total = total + item.DiscountCost;
 						}
+						else
+						{
+							total = total + (item.TotalQTY * item.ProductCost);
+						}
 					}
 				}
 				if (item.ComboProduct == "" && item.DiscountQuantity == 0)
