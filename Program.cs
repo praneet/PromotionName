@@ -29,12 +29,28 @@ namespace Promotion
 							select new
 							{
 								ProductName = t.Field<string>("CPName"),
-								TotalQTY = t.Field<string>("CPQty"),
-								ProductCost = p.Field<string>("PCost"),
+								TotalQTY = Convert.ToInt32(t.Field<string>("CPQty")),
+								ProductCost = Convert.ToInt32(p.Field<string>("PCost")),
+								DiscountQuantity = Convert.ToInt32(p.Field<string>("PDQty")),
+								DiscountCost = Convert.ToInt32(p.Field<string>("PDcost")),
+								ComboProduct = p.Field<string>("PDProd")
 							}).ToList();
 			foreach (var item in itemcost)
 			{
-				total = total + (Convert.ToInt32(item.TotalQTY) * Convert.ToInt32(item.ProductCost));
+				if (Convert.ToInt32(item.DiscountQuantity) != 0)
+				{
+					int DiscountQuantity = item.TotalQTY / item.DiscountQuantity;
+					int UndiscountQuantity = item.TotalQTY % item.DiscountQuantity;
+					total = total + (UndiscountQuantity * item.ProductCost) + (DiscountQuantity * item.DiscountCost);
+				}
+				if (item.ComboProduct != "")
+				{
+
+				}
+				else
+				{
+					total = total + (item.TotalQTY * item.ProductCost);
+				}
 			}
 			return total;
 		}
