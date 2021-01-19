@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -22,6 +23,7 @@ namespace Promotion
 
 		public static int TotalCheckout(DataTable inv, DataTable cart)
 		{
+			var deleteProduct = new List<string>();
 			int total = 0;
 			var itemcost = (from p in inv.AsEnumerable()
 							join t in cart.AsEnumerable()
@@ -37,7 +39,7 @@ namespace Promotion
 							}).ToList();
 			foreach (var item in itemcost)
 			{
-				if (Convert.ToInt32(item.DiscountQuantity) != 0)
+				if (item.DiscountQuantity != 0)
 				{
 					int DiscountQuantity = item.TotalQTY / item.DiscountQuantity;
 					int UndiscountQuantity = item.TotalQTY % item.DiscountQuantity;
@@ -45,9 +47,17 @@ namespace Promotion
 				}
 				if (item.ComboProduct != "")
 				{
-
+					var IteminCart = cart.AsEnumerable().Where(x => x.Field<string>("CPName") == item.ComboProduct).Count();
+					if (!deleteProduct.Contains(item.ProductName))
+					{
+						if (IteminCart > 0)
+						{
+							deleteProduct.Add(item.ComboProduct);
+							total = total + item.DiscountCost;
+						}
+					}
 				}
-				else
+				if (item.ComboProduct == "" && item.DiscountQuantity == 0)
 				{
 					total = total + (item.TotalQTY * item.ProductCost);
 				}
