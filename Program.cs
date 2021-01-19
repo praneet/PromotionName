@@ -9,7 +9,20 @@ namespace Promotion
 		static void Main(string[] args)
 		{
 			var inventory = AddProduct();
+			Console.WriteLine("Items Available for Display");
+			foreach (DataRow dataRow in inventory.Rows)
+			{
+				Console.WriteLine("Product " + dataRow.ItemArray[0] + " at initial Price " + dataRow.ItemArray[1]);
+			}
 			var orderCart = AddTocart();
+			var TotalCost = TotalCheckout(inventory, orderCart);
+			Console.WriteLine("Total Cost of your cart " + TotalCost);
+		}
+
+		public static int TotalCheckout(DataTable inv,DataTable cart)
+		{
+			int total = 0;
+			return total;
 		}
 		public static DataTable AddTocart()
 		{
@@ -17,6 +30,7 @@ namespace Promotion
 			bool AddMore = true;
 			DataTable dt = new DataTable();
 			dt.Columns.Add("CPName");
+			dt.PrimaryKey = new DataColumn[] { dt.Columns["CPName"] };
 			dt.Columns.Add("CPQty");
 			while (AddMore)
 			{
@@ -39,6 +53,7 @@ namespace Promotion
 			int n = Convert.ToInt32(Console.ReadLine());
 			DataTable dt = new DataTable();
 			dt.Columns.Add("PName");
+			dt.PrimaryKey = new DataColumn[] { dt.Columns["PName"] };
 			dt.Columns.Add("PCost");
 			dt.Columns.Add("PDQty");
 			dt.Columns.Add("PDcost");
