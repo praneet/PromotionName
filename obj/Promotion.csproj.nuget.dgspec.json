@@ -1,30 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/praneetambastha/Desktop/Promotion/Promotion.csproj": {}
+    "C:\\Users\\v-pramb.FAREAST\\source\\repos\\Promotion\\Promotion\\Promotion.csproj": {}
   },
   "projects": {
-    "/Users/praneetambastha/Desktop/Promotion/Promotion.csproj": {
+    "C:\\Users\\v-pramb.FAREAST\\source\\repos\\Promotion\\Promotion\\Promotion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/praneetambastha/Desktop/Promotion/Promotion.csproj",
+        "projectUniqueName": "C:\\Users\\v-pramb.FAREAST\\source\\repos\\Promotion\\Promotion\\Promotion.csproj",
         "projectName": "Promotion",
-        "projectPath": "/Users/praneetambastha/Desktop/Promotion/Promotion.csproj",
-        "packagesPath": "/Users/praneetambastha/.nuget/packages/",
-        "outputPath": "/Users/praneetambastha/Desktop/Promotion/obj/",
+        "projectPath": "C:\\Users\\v-pramb.FAREAST\\source\\repos\\Promotion\\Promotion\\Promotion.csproj",
+        "packagesPath": "C:\\Users\\v-pramb.FAREAST\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\v-pramb.FAREAST\\source\\repos\\Promotion\\Promotion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/praneetambastha/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\v-pramb.FAREAST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -35,8 +36,7 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
           "imports": [
             "net461",
             "net462",
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\nugetcache\\.A\\DotNetSDK.ZZEhAstwKZxyctAdeU2YHA\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

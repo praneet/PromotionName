@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\v-pramb.FAREAST\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\v-pramb.FAREAST\\.nuget\\packages"
+    ]
+  }
+}

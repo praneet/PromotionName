@@ -1,0 +1,11 @@
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\bin\Debug\netcoreapp3.1\Promotion.exe
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\bin\Debug\netcoreapp3.1\Promotion.deps.json
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\bin\Debug\netcoreapp3.1\Promotion.runtimeconfig.json
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\bin\Debug\netcoreapp3.1\Promotion.runtimeconfig.dev.json
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\bin\Debug\netcoreapp3.1\Promotion.dll
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\bin\Debug\netcoreapp3.1\Promotion.pdb
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\obj\Debug\netcoreapp3.1\Promotion.csprojAssemblyReference.cache
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\obj\Debug\netcoreapp3.1\Promotion.AssemblyInfoInputs.cache
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\obj\Debug\netcoreapp3.1\Promotion.AssemblyInfo.cs
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\obj\Debug\netcoreapp3.1\Promotion.dll
+C:\Users\v-pramb.FAREAST\source\repos\Promotion\Promotion\obj\Debug\netcoreapp3.1\Promotion.pdb
